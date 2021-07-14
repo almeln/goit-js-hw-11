@@ -1,5 +1,3 @@
-import '../css/common.css';
-
 const refs = {
     body: document.querySelector('body'),
     startBtn: document.querySelector('button[data-start]'),
