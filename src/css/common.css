@@ -43,7 +43,7 @@ input {
   text-align: center;
 }
 
-button{
+.timer-btn{
   display: inline-block;
   margin: 40px;
 

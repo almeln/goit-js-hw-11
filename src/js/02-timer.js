@@ -9,6 +9,8 @@ const refs = {
     seconds: document.querySelector('span[data-seconds]'),
 };
 
+refs.startBtn.classList.add('timer-btn');
+
 refs.startBtn.disabled = true;
 refs.inputDate.addEventListener('change', onSelectedDate);
 
