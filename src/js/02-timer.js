@@ -45,13 +45,15 @@ class Timer {
         
         const startTime = new Date(refs.inputDate.value).getTime();
 
+        const msInThreeHours = 10800000;
+
         this.isActive = true;
 
         refs.inputDate.disabled = true;
 
         this.intervalId = setInterval(() => {
             const currentTime = Date.now();
-            const deltaTime = startTime - currentTime;
+            const deltaTime = startTime - currentTime - msInThreeHours;
             const time = this.convertMs(deltaTime);
 
             this.onTick(time);
